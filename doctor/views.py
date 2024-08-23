@@ -2,6 +2,8 @@ from django.shortcuts import render
 from doctor import models, serializers
 from rest_framework import viewsets, pagination
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.filters import BaseFilterBackend
+
 
 # Create your views here.
 class DoctorPaginition(pagination.PageNumberPagination):
